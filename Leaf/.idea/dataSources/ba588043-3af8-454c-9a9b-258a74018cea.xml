@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - Leaf@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="Leaf">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="bookshop"/>
+    <schema id="3" name="information_schema"/>
+    <schema id="4" name="LikeHotel"/>
+    <schema id="5" name="mysql"/>
+    <schema id="6" name="performance_schema"/>
+    <schema id="7" name="sqli"/>
+    <schema id="8" name="sql_test"/>
+    <table id="9" parent="1" name="Leaf_info"/>
+    <column id="10" parent="9" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="11" parent="9" name="name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(50)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="12" parent="9" name="content">
+      <mandatory>1</mandatory>
+      <data-type>varchar(5000)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="13" parent="9" name="img1_path">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="14" parent="9" name="img2_path">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+      <default-expression>&apos;&apos;</default-expression>
+    </column>
+    <column id="15" parent="9" name="img3_path">
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <key id="16" parent="9" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
